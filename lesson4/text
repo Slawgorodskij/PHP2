@@ -1,0 +1,47 @@
+POST http://127.0.0.1:8000/article/create
+
+{
+"author_id":"2",
+"title":"Новейшая статья",
+"text":"Опять много букв из которых состоят слова и даже предложения"
+}
+
+================================================================
+
+GET http://127.0.0.1:8000/user/show?email=Slawgorodskij@mail.ru
+Cookie: XDEBUG_SESSION=start
+Accept: application/json
+
+================================================================
+
+POST http://127.0.0.1:8000/comment/create
+
+{
+"author_id":"2",
+"article_id":"2",
+"text":"Почитал про много букв и решил оставить свои, на память"
+}
+
+=================================================================
+
+GET http://127.0.0.1:8000/article/show?title=Новейшая статья
+Cookie: XDEBUG_SESSION=start
+Accept: application/json
+
+=================================================================
+
+GET http://127.0.0.1:8000/article/delete?id=5
+Cookie: XDEBUG_SESSION=start
+Accept: application/json
+
+=================================================================
+
+GET http://127.0.0.1:8000/comment/delete?id=5
+Cookie: XDEBUG_SESSION=start
+Accept: application/json
+
+================================================================
+
+
+
+
